@@ -63,6 +63,7 @@ end
 
 gem "govuk-components"
 gem "govuk_design_system_formbuilder"
+gem "govuk-wizardry"
 
 group :test do
   gem "rspec"
