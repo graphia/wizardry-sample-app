@@ -53,6 +53,7 @@ class FindYourTrnController < ApplicationController
           Wizardry::Questions::Hidden.new(:complete, true)
         ]
       ),
+      Wizardry::Pages::CompletionPage.new
     ]
   )
 end

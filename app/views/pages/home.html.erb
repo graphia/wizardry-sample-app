@@ -1,25 +1,16 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">It works! 🎉</h1>
+    <h1 class="govuk-heading-xl">Find your teacher reference number</h1>
 
     <p class="govuk-body">
-      Your application is ready - so long as this page rendered without any errors you're good to go.
+       Ut sagittis sapien odio, vel lacinia nulla suscipit vel. Pellentesque
+       scelerisque bibendum elit, ac ullamcorper lacus mattis quis. Aenean in justo
+       at arcu ornare venenatis eget gravida tellus. Pellentesque ut nisi at eros
+       aliquam viverra a eget metus. Pellentesque quis pulvinar nulla. Proin
+       scelerisque augue quis purus fringilla, et dapibus purus vulputate. Nunc
+       condimentum, augue ac lacinia vehicula, ex risus faucibus justo, eu maximus
+       metus erat tempor mauris.
     </p>
 
-    <%= govuk_summary_list(
-      rows: [
-        { key: { text: "Rails version" }, value: { text:  Rails.version } },
-        { key: { text: "Ruby version" }, value: { text:  RUBY_VERSION } },
-        { key: {
-          text: "GOV.UK Frontend" },
-          value: {
-            text: JSON
-              .parse(File.read(Rails.root.join("package.json")))
-              .dig("dependencies", "govuk-frontend")
-              .tr("^", "")
-          }
-        }
-      ]
-    ) %>
-  </div>
+    <%= govuk_start_button(text: "Start now", href: trn_edit_path("do-you-have-a-trn")) %>
 </div>
