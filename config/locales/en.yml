@@ -3,6 +3,12 @@ en:
     legend:
       search:
         do_you_have_a_trn: Do you have a teacher reference number?
+        date_of_birth: When were you born?
+
+    label:
+      search:
+        name: What is your name?
+        email: What is your email address?
 
     hint:
       search:
