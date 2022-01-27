@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get   %(find-your-trn/:page), to: %(find_your_trn#edit),   as: :trn_edit
+  patch %(find-your-trn/:page), to: %(find_your_trn#update), as: :trn_update
 end
